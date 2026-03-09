@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>SNAKE — neon terminal</title>
+  <meta name="description" content="Classic Snake game with a neon terminal aesthetic. Built with vanilla JS + Canvas." />
+  <meta name="theme-color" content="#060608" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PWA manifest inline -->
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">SN<span>A</span>KE</div>
+    <div class="version">v1.0 · NEON TERMINAL</div>
+  </header>
+
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-label">Score</span>
+      <span class="stat-value" id="scoreVal">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Best</span>
+      <span class="stat-value red" id="hiVal">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Level</span>
+      <span class="stat-value" id="lvlVal">1</span>
+    </div>
+  </div>
+
+  <div class="game-wrap">
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay">
+      <div id="overlayMsg">SNAKE</div>
+      <div id="overlaySub">Press SPACE or tap to start</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="hint"><span class="key">↑ ↓ ← →</span> move</div>
+    <div class="hint"><span class="key">WASD</span> move</div>
+    <div class="hint"><span class="key">P</span> pause</div>
+    <div class="hint"><span class="key">SPACE</span> start / retry</div>
+    <div class="hint"><span class="key">SWIPE</span> mobile</div>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>

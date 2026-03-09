@@ -1,0 +1,11 @@
+{
+  "name": "SNAKE — Neon Terminal",
+  "short_name": "SNAKE",
+  "description": "Classic Snake game with a neon terminal aesthetic",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#060608",
+  "theme_color": "#00ffb2",
+  "icons": []
+}
